@@ -10,7 +10,6 @@ export function Countdown() {
     activeCycle,
     activeCycleId,
     markCurrentCycleAsFinished,
-    setCycleActiveId,
     amountSecondsPassed,
     setSecondsPassed,
   } = useContext(CyclesContext)
@@ -39,7 +38,6 @@ export function Countdown() {
           markCurrentCycleAsFinished()
 
           setSecondsPassed(totalSeconds)
-          setCycleActiveId(null)
 
           clearInterval(interval)
         } else {
@@ -56,7 +54,6 @@ export function Countdown() {
     activeCycleId,
     totalSeconds,
     markCurrentCycleAsFinished,
-    setCycleActiveId,
     setSecondsPassed,
   ])
 
